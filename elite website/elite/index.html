@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite - Enlightened Thespians Theater</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>ELITE THEATER</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome to Enlightened Thespians</h2>
+      <p>
+        Inspiring young talents, building futures, and redefining creativity through the art of performance.
+      </p>
+      <a href="about.html" class="btn">Discover More</a>
+    </div>
+  </section>
+
+  <!-- Intro Section -->
+  <section class="intro-section">
+    <h2>Our Story</h2>
+    <p>
+      Since 2012, <strong>Elite Theater</strong> has empowered youth to explore their inner creativity through art.
+      With partnerships in over 500 schools across Kenya, our mission is to nurture talents, promote moral
+      excellence, and provide real-world opportunities in stage performance.
+    </p>
+  </section>
+
+  <!-- Vision, Mission, Motto -->
+  <section class="services-section">
+    <h2>Our Core Values</h2>
+    <div class="image-slider">
+      <img src="https://source.unsplash.com/random/400x300?drama" alt="Drama Scene">
+      <img src="https://source.unsplash.com/random/400x300?performance" alt="Stage Performance">
+      <img src="https://source.unsplash.com/random/400x300?actors" alt="Theater Team">
+    </div>
+    <br />
+    <p><strong>VISION:</strong> Nurture talents and help youth discover themselves.</p>
+    <p><strong>MISSION:</strong> Create jobs through art and education.</p>
+    <p><strong>MOTTO:</strong> <em>“Taste of Quality”</em></p>
+  </section>
+
+  <!-- 10th Anniversary Section -->
+  <section class="theatre-section">
+    <h2>🎉 Celebrating 10 Years of Excellence 🎉</h2>
+    <p>
+      A decade of transforming dreams into performances that inspire. Join us as we celebrate
+      10 years of creative brilliance and youth empowerment.
+    </p>
+    <div class="image-slider">
+      <img src="https://source.unsplash.com/random/400x300?celebration" alt="Anniversary">
+      <img src="https://source.unsplash.com/random/400x300?cake" alt="Cake Celebration">
+      <img src="https://source.unsplash.com/random/400x300?event" alt="Event Performance">
+    </div>
+  </section>
+
+  <!-- Prize Day Section -->
+  <section class="cre-section">
+    <h2>🏆 Prize Day - Honoring Our Stars 🏆</h2>
+    <p>
+      Every year, we recognize exceptional performances by our talented actors and students.
+      These awards celebrate dedication, creativity, and the spirit of art.
+    </p>
+    <div class="image-slider">
+      <img src="https://source.unsplash.com/random/400x300?award" alt="Award Ceremony">
+      <img src="https://source.unsplash.com/random/400x300?trophy" alt="Trophy">
+      <img src="https://source.unsplash.com/random/400x300?team" alt="Winning Team">
+    </div>
+  </section>
+
+  <!-- Revision Materials Section -->
+  <section class="performance-section">
+    <h2>📚 Revision Materials</h2>
+    <p>
+      We provide high-quality CBC-aligned revision resources for schools and students in
+      <strong>Languages, CRE, and Theater Arts.</strong>
+    </p>
+
+    <div class="video-gallery">
+      <div class="material-card">
+        <h3>📘 CRE Notes</h3>
+        <p>Comprehensive CBC materials for Grades 7–9 with drama-based examples.</p>
+        <a href="#" class="btn">Download</a>
+      </div>
+
+      <div class="material-card">
+        <h3>🎭 Drama Scripts</h3>
+        <p>Approved national scripts for school performances and competitions.</p>
+        <a href="#" class="btn">Access</a>
+      </div>
+
+      <div class="material-card">
+        <h3>🗣️ Language Oral Practice</h3>
+        <p>Exercises to build stage confidence and expressive communication skills.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+  <p>&copy; 2025 Elite Theater Company | All Rights Reserved</p>
+</footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/254712345678" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+  </a>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+  <script>
+    // Back to Top Button Script
+    const backToTop = document.getElementById("backToTop");
+    window.onscroll = () => {
+      if (document.documentElement.scrollTop > 300) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+    backToTop.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  </script>
+</body>
+</html>

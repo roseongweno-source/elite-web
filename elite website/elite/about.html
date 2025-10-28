@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Elite Theater Company</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- AOS Animation Library -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+  />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">ELITE</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <h1>About Enlightened Thespians Theater</h1>
+    <p>
+      For over a decade, Elite has inspired passion, creativity, and unity through the power of performance.
+    </p>
+  </section>
+
+  <!-- History Section -->
+  <section class="history" data-aos="fade-right">
+    <h2>🎭 Our Story</h2>
+    <p>
+      Established in 2012, <strong>Enlightened Thespians</strong> began as a small group of passionate youth who
+      believed in the transformative power of art. Today, Elite has grown into one of Kenya’s most respected
+      theater institutions, recognized under the <strong>Ministry of Education</strong>,
+      <strong>Ministry of Social Services</strong>, and <strong>KCCAA</strong>.
+    </p>
+    <div class="image-grid">
+      <img src="https://source.unsplash.com/random/400x300?theater" alt="Theater performance">
+      <img src="https://source.unsplash.com/random/400x300?acting" alt="Actors performing">
+      <img src="https://source.unsplash.com/random/400x300?stage" alt="Stage lights">
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="values" data-aos="fade-left">
+    <h2>✨ Our Values</h2>
+    <ul class="values-list">
+      <li><strong>Creativity:</strong> Encouraging expression and innovation in every performance.</li>
+      <li><strong>Discipline:</strong> Building professional ethics and teamwork among members.</li>
+      <li><strong>Empowerment:</strong> Creating opportunities for the youth through art.</li>
+      <li><strong>Excellence:</strong> Delivering quality performances that inspire and educate.</li>
+    </ul>
+  </section>
+
+  <!-- Performances Section -->
+  <section class="performances" data-aos="zoom-in">
+    <h2>🎬 Our Performances</h2>
+    <p>
+      From national stages to community events, our actors have showcased plays, spoken word,
+      and educational performances that move hearts and minds.
+    </p>
+    <div class="video-gallery">
+      <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Performance 1" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Performance 2" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Performance 3" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Meet Our Actors -->
+  <section class="team" data-aos="fade-up">
+    <h2>🌟 Meet Our Stars</h2>
+    <p>
+      Our actors are not just performers — they are storytellers who bring emotions to life on stage.
+    </p>
+    <div class="team-grid">
+      <div class="member-card">
+        <img src="https://source.unsplash.com/random/400x400?actor" alt="Actor 1">
+        <h3>Jane Mwangi</h3>
+        <p>Lead Actress | Creative Director</p>
+      </div>
+      <div class="member-card">
+        <img src="https://source.unsplash.com/random/400x400?performer" alt="Actor 2">
+        <h3>John Otieno</h3>
+        <p>Stage Performer | Script Writer</p>
+      </div>
+      <div class="member-card">
+        <img src="https://source.unsplash.com/random/400x400?drama" alt="Actor 3">
+        <h3>Mary Wanjiku</h3>
+        <p>Supporting Actress | Vocal Coach</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer data-aos="fade-up">
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p>&copy; 2025 Elite Theater Company | All Rights Reserved</p>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/254712345678" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200, once: true });
+
+    const backToTop = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+    backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  </script>
+</body>
+</html>

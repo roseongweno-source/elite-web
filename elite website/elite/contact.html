@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Elite Thespians Theater</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <h1>Enlightened Thespians Theater</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h2>🎭 Book a Performance</h2>
+    <p>Fill in the form below to book Enlightened Thespians for your next school or community performance.</p>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Name of School" required />
+      <input type="text" placeholder="Contact Person" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+
+      <label for="date" style="display:block; text-align:left; color:gold; margin-top:10px;">Booking Date:</label>
+      <input type="date" id="date" required />
+
+      <label for="book">Select Book / Performance:</label>
+      <select id="book" required>
+        <option value="">-- Select a Performance --</option>
+        <option value="setbook">Set Book Performance</option>
+        <option value="play">Stage Play</option>
+        <option value="cre">C.R.E Skit</option>
+        <option value="musical">Musical / Talent Show</option>
+      </select>
+
+      <textarea rows="5" placeholder="Additional Details (e.g. venue, time, special requests)"></textarea>
+      <button type="submit">Submit Booking</button>
+    </form>
+  </section>
+
+  <!-- Social Media Section -->
+  <section class="social-media">
+    <h3>Follow Us & Stay Connected</h3>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" title="Facebook">
+        <i class="fab fa-facebook-f" style="color: gold; font-size: 30px;"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" title="Instagram">
+        <i class="fab fa-instagram" style="color: gold; font-size: 30px;"></i>
+      </a>
+      <a href="https://www.youtube.com" target="_blank" title="YouTube">
+        <i class="fab fa-youtube" style="color: gold; font-size: 30px;"></i>
+      </a>
+      <a href="https://x.com" target="_blank" title="X (Twitter)">
+        <i class="fab fa-x-twitter" style="color: gold; font-size: 30px;"></i>
+      </a>
+      <a href="mailto:info@elitethespians.co.ke" title="Email Us">
+        <i class="fas fa-envelope" style="color: gold; font-size: 30px;"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/254712345678" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp" style="font-size: 32px; color: white; background:#25D366; padding:15px; border-radius:50%; box-shadow:0 0 10px rgba(0,0,0,0.3);"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Enlightened Thespians Theater. All Rights Reserved.</p>
+    <p><em>“Taste of Quality”</em></p>
+  </footer>
+
+</body>
+</html>
